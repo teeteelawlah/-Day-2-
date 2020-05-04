@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+	<h1><strong>Hotel Booking <br>Survey</strong></h1><br><br>
+	<div class="signup">
+		<form action="processform.php" method="POST">
+		<h2>By answering this survey, you will help <br>us determine how people choose a hotel</h2><br><br>
+	<div class="form-group">
+		<label for="Name"><b>*Name:</b></label><br/>
+		<input class="form-control" type="text" name="enter_your_name" placeholder="Enter your name"/>
+	</div>
+	<div class="form-group">
+		<label for="email"><b>*Email:</b></label><br/>
+		<input class="form-control" type="text" name="enter_your_email" placeholder="Enter your email"/>
+	</div>
+	<div class="form-group">
+		<label for="phone_number"><b>*Phone Number:</b></label><br/>
+		<input class="form-control" type="text" name="phone_number" placeholder="Phone Number"/>
+	</div>
+	<div class="form-group">
+		<label for="age"><b>*Age (Optional):</b></label><br/>
+		<select style="height: auto;" name="age">
+			<option value="under 18years">Under 18years</option>
+			<option>19 - 25years</option>
+			<option>26 - 35years</option>
+			<option>36 - 45years</option>
+			<option>46 - 55years</option>
+			<option>56years and above</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label for="Do_you_book_a_hotel_room_at_least_once_per_year?"><b>Do you book a hotel room at least once per year?</b></label><br/>
+		<select style="height: auto;" name="Booking">
+			<option>Yes</option>
+			<option>No</option>
+		</select>
+</div>
+
+<div class="radio">
+	<label for="Do_you_check_for_opinions_on_internet?"><b>Do you check for opinions on internet?</b></label><br/>
+	<ul>
+		<label><input type="radio" value="Always">Always</label>
+		<label><input type="radio" value="Sometimes" checked>Sometimes</span></label>
+		<label><input type="radio" value="Never"><span>Never</label>
+	 </div>
+	</ul>
+<div class="form-group">
+	<label for="which_of_these_sites_do_you_visit_for_opinions?(select all that apply)"><b>Which of these sites do you visit for opinions?</b></label><br/>
+	<input type="checkbox" id="opinion1" name="opinion1" value="Booking">
+	<label for="opinion1"> Booking</label><br>
+	<input type="checkbox" id="opinion2" name="trivago" value="Trivago">
+	<label for="opinion2"> Trivago</label><br>
+	<input type="checkbox" id="opinion3" name="kayak" value="Kayak">
+	<label for="opinion3"> Kayak</label><br><br>
+	<input type="checkbox" id="opinion4" name="tripadvisor" value="Tripadvisor" checked>
+	<label for="opinion4"> Tripadvisor</label><br><br>
+	<input type="checkbox" id="opinion5" name="none_of_the_above" value="None of the above">
+	<label for="opinion5"> None of the above</label><br><br>
+	</form>
+</div>
+<div class="form-group">
+	<label for="What_other_suggestions_can_you_give_an_hotelier?"><b>What other suggestions can you give an hotelier?</b></label><br><br>
+  <textarea name="message" rows="15" cols="50">
+  My suggestion to an hotelier is ...
+  </textarea>
+  <br><br>
+
+<div class="center">
+	<button type="submit" onclick="alert('Hotel survey')"><b>Submit</b></button>
+</div>
+</body>
+</html>
